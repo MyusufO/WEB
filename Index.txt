@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+
 </head>
 <body>
     <ul class="navbar">
@@ -15,11 +17,13 @@
 
     <div class="profile-card">
         <div class="profile-pic">
-            <img src="profile.jpg" alt="Profile Picture">
+            <img src="profile.jpg" alt="Profile Picture" id="profile-image">
         </div>
         <div class="profile-name">Mohammad Yusuf</div>
-        <div class="registration-number">Registration Number: ABC123</div>
+        <div class="registration-number">Registration Number: 20223567</div>
         <a href="https://www.instagram.com/__yuchuff__/" class="instagram-button" target="_blank">Visit Instagram</a>
     </div>
+
+
 </body>
 </html>
