@@ -1,5 +1,5 @@
 /* Styles for the navigation bar */
-ul.navbar {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,65 +7,116 @@ ul.navbar {
     overflow: hidden;
 }
 
-li.nav-item {
+.nav-item {
     float: right;
 }
 
-li.nav-item a {
-    display: block;	
+.nav-item a {
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li.nav-item a:hover {
+.nav-item a:hover {
     background-color: #ddd;
     color: black;
 }
 
-li.nav-item:last-child {
+.nav-item:last-child {
     margin-left: auto;
 }
 
-/* Styles for the grid container */
-.grid-container {
+.container {
     width: 1203px;
     height: 385px;
     top: 104px;
     left: 119px;
-    border-radius: 15px;
-    background-color: #3498db;
+    border-radius: 15px; /* Rounded corners */
+    border: 1px solid #000;
     position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px;
-    border: 1px solid #000;
-}
-
-/* Styles for the icon */
-.icon {
-    width: 385px;
-    height: 385px;
-    border-radius: 15px;
-    background-color: #e74c3c;
-    border: 1px solid #000;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 24px;
+    padding: 20px;
 }
 
-/* Styles for the rectangle */
+
 .rectangle {
     width: 385px;
     height: 385px;
     top: 104px;
     left: 119px;
+    border-radius: 15px; /* Rounded corners */
+    background: linear-gradient(135.38deg, #3300FF 0%, #FA00FF 98.32%); /* Gradient background */
+    border: 1px solid #000;
+}
+
+.icon {
+    width: 385px;
+    height: 385px;
+    top: 104px;
+    left: 119px;
+    background-color: #e74c3c;
+    border-radius: 15px; /* Rounded corners */
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.icon img {
+    width: 100%; /* Cover the full width of the icon container */
+    height: 100%; /* Cover the full height of the icon container */
+    max-width: none; /* Ensure image does not exceed container width */
+    max-height: none; /* Ensure image does not exceed container height */
     border-radius: 15px;
-    background-color: #27ae60;
+}
+
+
+/* Styles for the grid */
+.grid {
+    width: 385px;
+    height: 385px;
+    top :  104px;
+    left : 937px;
+    border-radius: 15px;
+    background-color: #3498db;
+    border: 1px solid #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+/* Styles for the small grid */
+.small-grid {
+    width: 314px;
+    height: 316px;
+    top : 50px;
+    left : 863px;
+    border-radius: 15px;
+    background-color: #3498db;
     border: 1px solid #000;
     position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows */
+    grid-gap: 10px;
+    /* Add any additional styles as needed */
 }
+.small-grid-item {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.small-grid-item:hover {
+    background-color: red;
+}
+
+
