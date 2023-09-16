@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <ul class="navbar">
+        <li class="nav-item"><a href="https://www.linkedin.com/in/mohammad-yusuf-b72342253/">LinkedIn</a></li>
+        <li class="nav-item"><a href="Web.html">Grid</a></li>
+        <li class="nav-item"><a href="index.html">Home</a></li>
+    </ul>
+    
+    	<div class="profile-picture">
+    		<img src="profile.jpg" alt="Profile Picture">
+		
+	</div>
+	<div class="INFO">
+		<h2>Name : Mohammad Yusuf</h2>
+    		<p>Registration Number: 20223567</p>
+	</div>
+	
+</body>
+</html>
